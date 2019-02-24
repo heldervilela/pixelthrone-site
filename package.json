@@ -5,7 +5,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-sass": "^1.0.0",
+    "@zeit/next-sass": "1.0.1",
+    "babel-plugin-inline-react-svg": "^0.5.4",
+	"ignore-loader": "^0.1.2",
     "next": "^8.0.3",
     "node-sass": "^4.7.2",
     "react": "^16.8.3",
