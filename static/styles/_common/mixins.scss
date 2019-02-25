@@ -1,10 +1,32 @@
-// Typography
+/**
+ * Typography */
+
+// Font famuly
 @mixin font($weight: 'medium') {
 	@if $weight == 'regular' {
 		font-family: 'Bw Modelica', sans-serif;
-		font-weight: 500;
+		font-weight: 400;
 	} @else if $weight == 'medium' {
 		font-family: 'Bw Modelica', sans-serif;
 		font-weight: 500;
 	}
 }
+
+// Page Title
+%page-title {
+	font-family: 'Bw Modelica - Titles', sans-serif;
+	font-weight: 500;
+	font-size: 6.5rem;
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+%section-title {}
+%section-subtitle {}
+
+// Text Title
+%text-title {
+	@include font('regular');
+	font-size: 20px;
+}
+
+%text-subtitle {}

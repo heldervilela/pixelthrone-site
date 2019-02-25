@@ -8,7 +8,7 @@ import { withRouter } from 'next/router';
 /**
  * Internal
  */
-import SVG_Brand from '../public/media/svg/main-brand.svg'
+import SVG_Brand from '../static/media/svg/main-brand.svg'
 
 /**
  * Component

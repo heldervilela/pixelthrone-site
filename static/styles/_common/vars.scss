@@ -6,13 +6,22 @@ $breakpoints: (
 	'desktops':1800px,
 );
 
+
 /**
  * Colors */
-$body--color--text: #0F0F0F;
-$body--color--bg: white;
+$color--featured: #FFBB02;
+
+// Text
+$color--text: #0F0F0F;
+$color--bg: #F6F7FB;
+
 
 /**
  * Layout */
+$large--margins: 30px;
+$menu-height: 85px;
+$section-max-width: 960px;
+
 
 /**
  * Easings */

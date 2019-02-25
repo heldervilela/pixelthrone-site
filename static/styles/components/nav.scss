@@ -1,8 +1,11 @@
 .the-navigation {
 	position: fixed;
+	top:0;
+	left: 0;
 	width: 100%;
 	height: auto;
-	padding: 20px 30px;
+	padding: 20px $large--margins;
+	z-index: 100;
 	background-color: rgba(red, 0.1);
 
 	.the-content {

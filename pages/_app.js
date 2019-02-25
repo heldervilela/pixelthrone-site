@@ -31,12 +31,12 @@ export default class MyApp extends App {
 	}
 
 	render() {
-		const { Component, pageProps } = this.props
+		const { Component, pageProps, router } = this.props
 
 		return (
 			<Container>
 				<Nav/>
-				<main className="the-page-content">
+				<main className="the-page-content" data-page={router.asPath}>
 					<Component {...pageProps} />
 				</main>
 				<NProgress />

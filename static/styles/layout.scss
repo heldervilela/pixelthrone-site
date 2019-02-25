@@ -19,6 +19,7 @@ body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+	background-color: $color--bg;
 
 	/**
 	 * Website Fonts */
@@ -42,6 +43,38 @@ body {
 	 * Main Content */
 	main {
 		&::selection { background: $color--featured; color: white; }
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+
+		width: 100%;
+
+		section:not( [data-fullwidth="true"] ) {
+			width: 100%;
+			max-width: $section-max-width;
+			background-color: rgba(blue, 0.1);
+		}
+
+		section[data-fullwidth="true"] {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: rgba(blue, 0.1);
+
+			> .the-section-content {
+				width: 100%;
+				margin: 0 $large--margins;
+				max-width: $section-max-width;
+				background-color: rgba(blue, 0.1);
+			}
+
+		}
 	}
 
 }
