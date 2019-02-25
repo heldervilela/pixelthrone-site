@@ -1,0 +1,10 @@
+// Typography
+@mixin font($weight: 'medium') {
+	@if $weight == 'regular' {
+		font-family: 'Bw Modelica', sans-serif;
+		font-weight: 500;
+	} @else if $weight == 'medium' {
+		font-family: 'Bw Modelica', sans-serif;
+		font-weight: 500;
+	}
+}

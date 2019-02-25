@@ -1,0 +1,45 @@
+.the-navigation {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	padding: 20px 30px;
+	background-color: rgba(red, 0.1);
+
+	.the-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-end;
+		background-color: rgba(red, 0.1);
+
+		.the-brand {
+			svg {
+				display: inherit;
+			}
+		}
+
+		.the-menu {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: center;
+
+			margin-left: 60px;
+			margin-bottom: -1px;
+			background-color: rgba(red, 0.1);
+
+			a {
+				font-size: 1.6rem;
+				margin-right: 40px;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
+
+		}
+
+	}
+}
