@@ -1,0 +1,25 @@
+section[data-component="csblocks/intro"] {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	.the-content {
+		width: 50%;
+		h2 {
+			@extend %section-title;
+			b {
+				color: $color--featured;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.the-image {
+		width: 50%;
+	}
+
+}
+

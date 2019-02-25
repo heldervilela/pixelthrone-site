@@ -6,7 +6,8 @@
 	height: auto;
 	padding: 20px $large--margins;
 	z-index: 100;
-	background-color: rgba(red, 0.1);
+	color: $color--text;
+background-color: rgba(red, 0.1);
 
 	.the-content {
 		display: flex;
@@ -14,7 +15,7 @@
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 		align-items: flex-end;
-		background-color: rgba(red, 0.1);
+background-color: rgba(red, 0.1);
 
 		.the-brand {
 			svg {
@@ -31,7 +32,7 @@
 
 			margin-left: 60px;
 			margin-bottom: -1px;
-			background-color: rgba(red, 0.1);
+background-color: rgba(red, 0.1);
 
 			a {
 				font-size: 1.6rem;

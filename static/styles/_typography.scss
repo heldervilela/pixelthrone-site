@@ -16,7 +16,24 @@
 }
 
 @font-face {
-	font-family: 'Bw Modelica - Titles';
+	font-family: 'Bw Modelica';
+	src: url('/static/media/fonts/BwModelica-Bold.woff2') format('woff2'),
+	url('/static/media/fonts/BwModelica-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+// 01
+@font-face {
+	font-family: 'Bw Modelica - Heading';
+	src: url('/static/media/fonts/BwModelicaSS01-Regular.woff2') format('woff2'),
+	url('/static/media/fonts/BwModelicaSS01-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bw Modelica - Heading';
 	src: url('/static/media/fonts/BwModelicaSS01-Medium.woff2') format('woff2'),
 	url('/static/media/fonts/BwModelicaSS01-Medium.woff') format('woff');
 	font-weight: 500;

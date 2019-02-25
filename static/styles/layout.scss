@@ -20,6 +20,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: $color--bg;
+	color: $color--text;
 
 	/**
 	 * Website Fonts */
@@ -38,6 +39,9 @@ body {
 	/**
 	 * Global Components */
 	@import './components/nav.scss';
+	@import './components/utils/menu-cta.scss';
+	@import './components/utils/popover.scss';
+	@import './components/utils/button.scss';
 
 	/**
 	 * Main Content */
@@ -52,29 +56,37 @@ body {
 
 		width: 100%;
 
-		section:not( [data-fullwidth="true"] ) {
-			width: 100%;
-			max-width: $section-max-width;
-			background-color: rgba(blue, 0.1);
-		}
+		section {
 
-		section[data-fullwidth="true"] {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			flex-wrap: nowrap;
-			justify-content: flex-start;
-			align-items: center;
-			background-color: rgba(blue, 0.1);
-
-			> .the-section-content {
-				width: 100%;
-				margin: 0 $large--margins;
-				max-width: $section-max-width;
-				background-color: rgba(blue, 0.1);
+			p {
+				margin-bottom: 20px;
+				line-height: 1.8;
 			}
 
+			&:not( [data-fullwidth="true"] ) {
+				width: 100%;
+				max-width: $section-max-width;
+background-color: rgba(blue, 0.1);
+			}
+			&[data-fullwidth="true"] {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				align-items: center;
+background-color: rgba(blue, 0.1);
+				> .the-section-content {
+					width: 100%;
+					margin: 0 $large--margins;
+					max-width: $section-max-width;
+background-color: rgba(blue, 0.1);
+				}
+			}
+
+			margin-bottom: $section-bottom-margin;
 		}
+
 	}
 
 }

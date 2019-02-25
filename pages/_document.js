@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
 		    <meta name="msapplication-TileColor" content="#FFBB02"/>
 		    <meta name="theme-color" content="#FFBB02"/>
 	    </Head>
-	    <body>
+	    <body data-touch="false">
 		    <Main/>
 		    <NextScript/>
 	    </body>

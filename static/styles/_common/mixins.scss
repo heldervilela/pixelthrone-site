@@ -3,24 +3,37 @@
 
 // Font famuly
 @mixin font($weight: 'medium') {
+	font-family: 'Bw Modelica', sans-serif;
 	@if $weight == 'regular' {
-		font-family: 'Bw Modelica', sans-serif;
 		font-weight: 400;
 	} @else if $weight == 'medium' {
-		font-family: 'Bw Modelica', sans-serif;
 		font-weight: 500;
+	} @else if $weight == 'bold' {
+		font-weight: 700;
 	}
 }
 
 // Page Title
 %page-title {
-	font-family: 'Bw Modelica - Titles', sans-serif;
+	font-family: 'Bw Modelica - Heading', sans-serif;
 	font-weight: 500;
 	font-size: 6.5rem;
 	line-height: 1.3;
 	margin-bottom: 20px;
 }
-%section-title {}
+
+// Section Title
+%section-title {
+	font-family: 'Bw Modelica - Heading', sans-serif;
+	font-weight: 400;
+	font-size: 4.4rem;
+	line-height: 1.3;
+	margin-bottom: 30px;
+
+	b { font-weight: 500; }
+}
+
+// Section SubTitle
 %section-subtitle {}
 
 // Text Title

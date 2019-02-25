@@ -1,0 +1,41 @@
+div[data-component="utils/popover"] {
+	position: relative;
+
+	.popover-content {
+		transition: all 0.6s $easeInOutExpo;
+		position: absolute;
+		left: 50%;
+		top: calc( 100% + 30px );
+		transform: translateX(-50%) translateZ(0) scale(1.0, 1.0);
+		padding: 15px 30px;
+		border-radius: 8px;
+		background: white;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 10;
+
+		-webkit-backface-visibility: hidden;
+
+		box-shadow: -1px 15px 30px 0 rgba(0,0,0,0.15);
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			background: white;
+			transform: translateX(-50%) translateY(-50%) rotate(45deg);
+			top: 0;
+			left: 50%;
+		}
+
+		/* ---- Show ---- */
+
+		&[data-show="true"] {
+			opacity: 1;
+			visibility: visible;
+			top: calc( 100% + 20px );
+		}
+	}
+
+}

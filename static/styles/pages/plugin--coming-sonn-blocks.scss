@@ -1,7 +1,12 @@
 body {
-	main[data-page="/plugin/coming-sonn-blocks"] {
-		/**
-		 * Components */
-		@import '../components/plugin--csblocks/header';
-	}
+
+	/**
+	 * Components */
+	@import '../components/plugin--csblocks/hero';
+	@import '../components/plugin--csblocks/intro';
+
+	/**
+    * Page */
+	main[data-page="/plugin/coming-sonn-blocks"] {}
+
 }

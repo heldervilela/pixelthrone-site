@@ -1,0 +1,25 @@
+/**
+ * Button
+ */
+button[data-component="utils/button"] {
+	position: relative;
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+/**
+ * Link
+ */
+a[data-component="utils/link"] {
+	position: relative;
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+}
