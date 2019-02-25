@@ -1,0 +1,24 @@
+/**
+ * No Scroll
+ */
+body.-no-scroll {
+	overflow: hidden;
+	height: 100%;
+}
+/**
+ * Page Loading Classes
+ */
+body.-page-loading {
+
+	&::before {
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		background: transparent;
+		cursor: progress;
+		z-index: 99999999999;
+	}
+}

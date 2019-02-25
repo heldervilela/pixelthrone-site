@@ -12,6 +12,11 @@ import Nav from '../_components/nav';
 import Footer from '../_components/footer';
 
 /**
+ * Styles
+ */
+import '../public/styles/layout.scss'
+
+/**
  * Component
  */
 export default class MyApp extends App {
@@ -31,7 +36,9 @@ export default class MyApp extends App {
 		return (
 			<Container>
 				<Nav/>
-				<Component {...pageProps} />
+				<div className="the-page-content">
+					<Component {...pageProps} />
+				</div>
 				<NProgress />
 				<Footer/>
 			</Container>

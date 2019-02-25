@@ -4,11 +4,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 
 /**
- * Internal
- */
-import '../public/styles/layout.scss'
-
-/**
  * Component
  */
 export default class MyDocument extends Document {
@@ -16,7 +11,6 @@ export default class MyDocument extends Document {
     return (
 	    <html lang="en-US">
 	    <Head>
-		    <title>PixelThrone ¬ We build Premium WordPress Themes & Plugins</title>
 		    <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
 		    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 

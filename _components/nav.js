@@ -6,6 +6,11 @@ import Link from 'next/link';
 import { withRouter } from 'next/router';
 
 /**
+ * Internal
+ */
+import SVG_Brand from '../public/media/svg/main-brand.svg'
+
+/**
  * Component
  */
 const Nav = ({router}) => {
@@ -13,12 +18,14 @@ const Nav = ({router}) => {
 
 	return (
 		<nav className="the-navigation">
-			<Link href="/"><a>Home</a></Link>—
-			<Link href="/plugins"><a>Plugins</a></Link>—
-			<Link href="/themes"><a>Themes</a></Link>—
-			<Link href="/get-in-touch"><a>Get in touch</a></Link>
-
-			<hr/>
+			<div className="the-content">
+				<Link href="/" prefetch><a className="main-brand"><SVG_Brand/></a></Link>
+				<div className="the-menu">
+					<Link href="/themes" prefetch><a>Themes</a></Link>
+					<Link href="/plugins" prefetch><a>Plugins</a></Link>
+					<Link href="/support" prefetch><a>Support</a></Link>
+				</div>
+			</div>
 		</nav>
 	);
 }
