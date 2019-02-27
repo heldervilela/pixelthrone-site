@@ -7,9 +7,12 @@ import {Fragment} from "react";
 /**
  * Internal
  */
-import MenuCTA from '../../_components/_utils/menu-cta.js'
-import Hero from '../../_components/plugin--csblocks/hero.js'
-import Intro from '../../_components/plugin--csblocks/intro.js'
+import MenuCTA from '../../_components/_utils/menu-cta'
+import Hero from '../../_components/plugin--csblocks/hero'
+import Intro from '../../_components/plugin--csblocks/intro'
+import Demos from '../../_components/plugin--csblocks/demos'
+import HowItWorks from '../../_components/plugin--csblocks/how-it-works'
+import Features from '../../_components/plugin--csblocks/features'
 
 /**
  * Styles
@@ -36,5 +39,8 @@ export default () => (
 		<MenuCTA downloadInfo={downloadInfo}/>
 		<Hero/>
 		<Intro/>
+		<Demos/>
+		<HowItWorks/>
+		<Features/>
 	</Fragment>
 )

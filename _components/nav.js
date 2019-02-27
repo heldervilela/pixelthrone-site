@@ -1,7 +1,6 @@
 /**
  * Dependencies
  */
-import React from 'react'
 import Link from 'next/link';
 import { withRouter } from 'next/router';
 
@@ -19,7 +18,9 @@ const Nav = ({router}) => {
 	return (
 		<nav className="the-navigation">
 			<div className="the-content">
-				<Link href="/" prefetch><a className="the-brand"><SVG_Brand/></a></Link>
+				<Link href="/" prefetch>
+					<a className="the-brand"><SVG_Brand/></a>
+				</Link>
 				<div className="the-menu">
 					<Link href="/themes" prefetch><a>Themes</a></Link>
 					<Link href="/plugins" prefetch><a>Plugins</a></Link>

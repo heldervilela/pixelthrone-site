@@ -1,19 +1,19 @@
 /**
- * Internal
+ * Dependencies
  */
 import Link from 'next/link';
 
 /**
  * Button
  */
-export default function Button( {title, href, as, prefetch} ) {
+export default function Button( {children, href, as, prefetch, ...props } ) {
 
 	if( href ) {
 
 		return (
 			<Link href={href} as={as} prefetch={prefetch}>
-				<a data-component="csblocks/link">
-					<p>{title}</p>
+				<a data-component="utils/button" role="button" {...props}>
+					{children}
 				</a>
 			</Link>
 		);
@@ -21,10 +21,8 @@ export default function Button( {title, href, as, prefetch} ) {
 	} else {
 
 		return (
-			<button data-component="csblocks/button"
-			        {...props}
-			>
-				<p>{title}</p>
+			<button data-component="utils/button" role="button" {...props}>
+				{children}
 			</button>
 		);
 

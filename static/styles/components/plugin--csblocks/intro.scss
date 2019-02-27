@@ -15,11 +15,23 @@ section[data-component="csblocks/intro"] {
 				font-weight: 400;
 			}
 		}
+		.cta-buttons {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: center;
+
+			margin-top: 70px;
+
+			a:nth-of-type(1) {
+				margin-right: 15px;
+			}
+		}
 	}
 
 	.the-image {
 		width: 50%;
 	}
-
 }
 

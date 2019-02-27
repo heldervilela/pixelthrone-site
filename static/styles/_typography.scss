@@ -39,3 +39,13 @@
 	font-weight: 500;
 	font-style: normal;
 }
+
+
+// 01
+@font-face {
+	font-family: 'Bw Modelica - Note';
+	src: url('/static/media/fonts/BwModelicaSS02-Bold.woff2') format('woff2'),
+	url('/static/media/fonts/BwModelicaSS02-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}

@@ -1,25 +1,52 @@
-/**
- * Button
- */
-button[data-component="utils/button"] {
+button[data-component="utils/button"],
+a[data-component="utils/button"] {
 	position: relative;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	svg {
+		display: inherit;
+		margin-right: 15px;
+	}
 
 	p {
 		margin: 0;
 		padding: 0;
+		font-weight: 700;
 	}
 
-}
-
-/**
- * Link
- */
-a[data-component="utils/link"] {
-	position: relative;
-
-	p {
-		margin: 0;
-		padding: 0;
+	/**
+	 * Sizes
+	 */
+	&.isLarge {
+		padding: 18px 35px;
+		font-size: 16px;
+		font-weight: 700;
 	}
 
+	/**
+	 * Color
+	 */
+	&.isDefault {
+		background-color: white;
+		p { color: $color--text; }
+	}
+
+	&.isPrimary {
+		background-color: $color--featured;
+		p { color: white; }
+	}
+
+	/**
+	 * Extras
+	 */
+	&.withBorder {
+		border: 2px solid $color--text;
+		padding: 16px 35px;
+	}
 }

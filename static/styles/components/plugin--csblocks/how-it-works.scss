@@ -1,0 +1,51 @@
+section[data-component="csblocks/how-it-works"] {
+
+	// Title
+	.the-section-content {
+		h6 {
+			@extend %section-note-text;
+		}
+		h2 {
+			@extend %section-title;
+			max-width: 870px;
+		}
+	}
+
+	// Demos
+	.demos-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+
+		max-width: 1120px;
+		margin: 0 auto;
+
+		button {
+			transition: all 0.6s $easeOutQuart;
+			border: none;
+			background-color: transparent;
+			padding: 0;
+			margin: 0;
+			box-shadow: 10px 12px 34px -10px rgba(black,0.18);
+			border-radius: 5px;
+			overflow: hidden;
+			cursor: pointer;
+
+			img {
+				display: inherit;
+				max-width: 100%;
+			}
+		}
+	}
+
+}
+
+/**
+ * Hover Effect
+ */
+&[data-touch="false"] section[data-component="csblocks/demos"] {
+	.demos-list button:hover {
+		box-shadow: 10px 0 0 -10px rgba(black,0.18);
+		transform: scale(0.95);
+	}
+}
