@@ -1,8 +1,17 @@
 {
+  "name": "pixelthrone-site",
+  "title": "PixelThrone Website",
+  "description": "The official website for pixelthrone.com",
+  "author": "Helder Vilela",
+  "team": "PixelThrone",
+  "author_uri": "htts://heldervilela.com",
+  "copyright": "Copyright (c) 2019, PixelThrone",
+  "version": "2.0.0",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+	"now-build": "next build && next export -o dist"
   },
   "dependencies": {
     "@zeit/next-sass": "1.0.1",
