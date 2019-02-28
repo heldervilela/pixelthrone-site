@@ -56,3 +56,19 @@
 }
 
 %text-subtitle {}
+
+
+/**
+ * Others
+ */
+/*
+ * Debug */
+@mixin debug($debug: $debug, $content:false) {
+	@if $debug == 'dev' {
+		@if $content == true {
+			@content;
+		} @else {
+			background-color: rgba(red, 0.2);
+		}
+	}
+}

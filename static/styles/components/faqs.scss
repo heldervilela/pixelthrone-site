@@ -1,0 +1,127 @@
+section[data-component="faqs"] {
+
+	// Title
+	.the-content {
+		max-width: 520px;
+		h6 {
+			@extend %section-note-text;
+		}
+		h2 {
+			@extend %section-title;
+			max-width: 630px;
+		}
+	}
+
+	$horizontal-padding: 21px;
+	$vertical-padding: 25px;
+	.faqs {
+		article {
+			transition: all 0.6s $easeOutQuart;
+			background: white;
+			border-radius: 10px;
+			box-shadow: -10px 20px 34px -10px rgba(0, 0, 0, 0.0);
+
+			&:not(:last-of-type) { margin-bottom: 15px}
+
+			button {
+				padding: $horizontal-padding $vertical-padding;
+				font-weight: 500;
+				position: relative;
+				width: 100%;
+				text-align: left;
+
+				i {
+					transition: all 0.6s $easeInOutExpo;
+					position: absolute;
+					right: 25px;
+					top: 26px;
+					width: 11px;
+					height: 15px;
+
+					&::before {
+						transition: all 0.6s $easeInOutExpo;
+						content: " ";
+						width: 100%;
+						height: 2px;
+						position: absolute;
+						left: 0;
+						top: 0;
+						background-color: $color--text;
+						border-radius: 3px;
+						transform: rotate(45deg) translateX(-2px) translateZ(0) scale(1.0, 1.0);
+						transform-origin: 0 0;
+						-webkit-backface-visibility: hidden;
+					}
+					&::after {
+						transition: all 0.6s $easeInOutExpo;
+						content: " ";
+						width: 100%;
+						height: 2px;
+						position: absolute;
+						left: 0;
+						top: 0;
+						background-color: $color--text;
+						border-radius: 3px;
+						transform: rotate(-45deg) translateX(2px) translateZ(0) scale(1.0, 1.0);
+						transform-origin: 100% 0;
+						-webkit-backface-visibility: hidden;
+					}
+				}
+			}
+
+			div {
+				p {
+					transition: all 0.6s $easeOutQuart;
+					padding: 0 $vertical-padding $horizontal-padding $vertical-padding;
+					font-size: 1.4rem;
+					max-width: 93%;
+					opacity: 0;
+					margin-bottom: 0;
+					transform: translateY(5px);
+				}
+			}
+
+			/**
+			 * States
+			 */
+			&[data-open='false'] {
+				&:hover {
+					box-shadow: -10px 20px 30px -10px rgba(0, 0, 0, 0.20);
+					transform: translateY(-5px);
+				}
+				div {
+					visibility: hidden;
+					position: absolute;
+					top: -9999px;
+					left: -9999px;
+				}
+			}
+			&[data-open='true'] {
+				box-shadow: -10px 20px 30px -10px rgba(0, 0, 0, 0.15);
+				transform: translateY(-5px);
+				border-radius: 8px;
+				button {
+					padding-bottom: 10px;
+					i {
+						//top: 25px;
+						&::before { transform: rotate(45deg) translate(3px, 0) translateZ(0) scale(1.0, 1.0); }
+						&::after { transform: rotate(-45deg) translate(-3px, 0) translateZ(0) scale(1.0, 1.0); }
+					}
+				}
+				div p {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+
+}
+
+/**
+ * Hover Effect
+ */
+&[data-touch="false"] section[data-component="faqs"] .faqs {
+	article {
+	}
+}

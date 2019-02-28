@@ -81,6 +81,13 @@ table {
 	border-spacing: 0;
 }
 
+button {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}
+
 ol,
 ul {
 	list-style: none;
