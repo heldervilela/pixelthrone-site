@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "pixelthrone-site",
+  "name": "pixelthrone",
   "builds": [
 	{ "src": "package.json", "use": "@now/static-build" }
   ]

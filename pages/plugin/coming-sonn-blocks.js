@@ -13,6 +13,7 @@ import Intro from '../../_components/plugin--csblocks/intro'
 import Demos from '../../_components/plugin--csblocks/demos'
 import HowItWorks from '../../_components/plugin--csblocks/how-it-works'
 import Features from '../../_components/plugin--csblocks/features'
+import Prices from '../../_components/plugin--csblocks/prices'
 
 /**
  * Styles
@@ -42,5 +43,6 @@ export default () => (
 		<Demos/>
 		<HowItWorks/>
 		<Features/>
+		<Prices downloadInfo={downloadInfo}/>
 	</Fragment>
 )

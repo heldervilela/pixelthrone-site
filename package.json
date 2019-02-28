@@ -1,5 +1,5 @@
 {
-  "name": "pixelthrone-site",
+  "name": "pixelthrone",
   "title": "PixelThrone Website",
   "description": "The official website for pixelthrone.com",
   "author": "Helder Vilela",
@@ -21,10 +21,8 @@
     "node-sass": "^4.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-text-loop": "^2.0.1"
-  },
-  "devDependencies": {
-    "nprogress": "^0.2.0",
-    "react-svg-loader": "^2.1.0"
+    "react-text-loop": "^2.0.1",
+	"react-svg-loader": "^2.1.0",
+	"nprogress": "^0.2.0"
   }
 }

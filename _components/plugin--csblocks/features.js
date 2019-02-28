@@ -21,15 +21,6 @@ import Icon_CssJs from '../../static/media/svg/csblocks/feature--css-js.svg'
 import Icon_Favicon from '../../static/media/svg/csblocks/feature--favicon.svg'
 
 /**
- * Thumb Component
- */
-const Icon = ({demo}) => (
-	<button>
-		<img src={demo.thumb}/>
-	</button>
-)
-
-/**
  * Main Component
  */
 export default () => (
@@ -103,70 +94,84 @@ export default () => (
 
 			<div>
 
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_PasswordProtected/>
-						<p>Password Protected</p>
-					</div>
-				)}>
-					<p>Add this option to view the website using a secret password. Ideal for accessing the website without sharing the admin login.</p>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_SchedulePublish/>
-						<p>Schedule Publish</p>
-					</div>
-				)}>
-					<p>Schedule your site to be published at a particular time and date, with this option you just have to tell the day and time for the coming Soon to be offline and your site visible to everyone.</p>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_RedirectMode/>
-						<p>Redirect Mode</p>
-					</div>
-				)}>
-					<p>If you change your domain and you want to forward the users to the new url then this is the option you are looking for.</p>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_CookieNotice/>
-						<p>Cookie Notice</p>
-					</div>
-				)}>
-					<p>A simple but elegant notice which notifies visitors that the website uses cookies.</p>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_LoggedInUsers/>
-						<p>Show normal website to logged in users</p>
-					</div>
-				)}>
-					<p>With this option the logged in users will view the website normally while visitors see the maintenance / coming soon page.</p>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_CssJs/>
-						<p>Custom Css & Javascript</p>
-					</div>
-				)}>
-					<p>This option is perfect for adding your analytics or facebook tracking code. If you want to do an extra customization on the layout then this CSS option is what you are looking for.</p>
-					<p>The available options are:</p>
-					<ul>
-						<li>Google Analytics Tracking ID</li>
-						<li>Facebook Tracking Pixel (pro)</li>
-						<li>3rd Party Analytics Code (pro)</li>
-						<li>Free Javascript (<em>pro</em>)</li>
-						<li>Free CSS  (<em>pro</em>)</li>
-					</ul>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_Favicon/>
-						<p>Favicon</p>
-					</div>
-				)}>
-					<p>Icon that appears in the browser tab.</p>
-				</Popover>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_PasswordProtected/>
+							<p>Password Protected</p>
+						</div>
+					)}>
+						<p>Add this option to view the website using a secret password. Ideal for accessing the website without sharing the admin login.</p>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_SchedulePublish/>
+							<p>Schedule Publish</p>
+						</div>
+					)}>
+						<p>Schedule your site to be published at a particular time and date, with this option you just have to tell the day and time for the coming Soon to be offline and your site visible to everyone.</p>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_RedirectMode/>
+							<p>Redirect Mode</p>
+						</div>
+					)}>
+						<p>If you change your domain and you want to forward the users to the new url then this is the option you are looking for.</p>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_CookieNotice/>
+							<p>Cookie Notice</p>
+						</div>
+					)}>
+						<p>A simple but elegant notice which notifies visitors that the website uses cookies.</p>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_LoggedInUsers/>
+							<p>Show normal website to logged in users</p>
+						</div>
+					)}>
+						<p>With this option the logged in users will view the website normally while visitors see the maintenance / coming soon page.</p>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_CssJs/>
+							<p>Custom Css & Javascript</p>
+						</div>
+					)}>
+						<p>This option is perfect for adding your analytics or facebook tracking code. If you want to do an extra customization on the layout then this CSS option is what you are looking for.</p>
+						<p>The available options are:</p>
+						<ul>
+							<li>Google Analytics Tracking ID</li>
+							<li>Facebook Tracking Pixel (pro)</li>
+							<li>3rd Party Analytics Code (pro)</li>
+							<li>Free Javascript (<em>pro</em>)</li>
+							<li>Free CSS  (<em>pro</em>)</li>
+						</ul>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_Favicon/>
+							<p>Favicon</p>
+						</div>
+					)}>
+						<p>Icon that appears in the browser tab.</p>
+					</Popover>
+				</div>
 
 			</div>
 		</div>
@@ -178,46 +183,54 @@ export default () => (
 
 			<div>
 
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_Backgrounds/>
-						<p>Search Engines</p>
-					</div>
-				)}>
-					<p>SEO is the most important options for a page and so we’ve created all the options you’ll need to get the best ranking possible.</p>
-					<p>The available options are:</p>
-					<ul>
-						<li>Page Title</li>
-						<li>Description meta tag</li>
-						<li>Keywords meta tag</li>
-						<li>Author meta tag</li>
-						<li>Copyright meta tag</li>
-					</ul>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_Typography/>
-						<p>Facebook & Twitter Share Details</p>
-					</div>
-				)}>
-					<p>A set of options to configure how your page looks when shared on social networks.</p>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_Overlayer/>
-						<p>Send No-cache Headers</p>
-					</div>
-				)}>
-					<p>If you don’t want the coming soon page preview to be cached by Facebook and other social media then enable this option. Once you switch to the normal site social media preview (visible when sharing the site link) will immediately be refreshed.</p>
-				</Popover>
-				<Popover content={(
-					<div className="featured-info">
-						<Icon_CustomBrand/>
-						<p>Temporarily Pause Search Engines</p>
-					</div>
-				)}>
-					<p>If your site is already indexed and you’re just taking it down for a while, then enable this option. It temporarily discourages search engines from crawling the site telling them it’s under construction by sending a 503 Service Unavailable response.</p>
-				</Popover>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_Backgrounds/>
+							<p>Search Engines</p>
+						</div>
+					)}>
+						<p>SEO is the most important options for a page and so we’ve created all the options you’ll need to get the best ranking possible.</p>
+						<p>The available options are:</p>
+						<ul>
+							<li>Page Title</li>
+							<li>Description meta tag</li>
+							<li>Keywords meta tag</li>
+							<li>Author meta tag</li>
+							<li>Copyright meta tag</li>
+						</ul>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_Typography/>
+							<p>Facebook & Twitter Share Details</p>
+						</div>
+					)}>
+						<p>A set of options to configure how your page looks when shared on social networks.</p>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_Overlayer/>
+							<p>Send No-cache Headers</p>
+						</div>
+					)}>
+						<p>If you don’t want the coming soon page preview to be cached by Facebook and other social media then enable this option. Once you switch to the normal site social media preview (visible when sharing the site link) will immediately be refreshed.</p>
+					</Popover>
+				</div>
+				<div>
+					<Popover content={(
+						<div className="featured-info">
+							<Icon_CustomBrand/>
+							<p>Temporarily Pause Search Engines</p>
+						</div>
+					)}>
+						<p>If your site is already indexed and you’re just taking it down for a while, then enable this option. It temporarily discourages search engines from crawling the site telling them it’s under construction by sending a 503 Service Unavailable response.</p>
+					</Popover>
+				</div>
 
 			</div>
 		</div>

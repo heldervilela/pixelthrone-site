@@ -55,7 +55,7 @@ const Thumb = ({demo}) => (
  * Main Component
  */
 export default () => (
-	<section data-fullwidth="true"  data-component="csblocks/demos">
+	<section data-fullwidth="true" data-component="csblocks/demos">
 
 		<div className="the-section-content">
 			<h6>12 demos ready to use</h6>
